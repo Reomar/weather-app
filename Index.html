@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/rimouski.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">    
+    <script src="skycons.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <div id="location-true">
+        <div id="main">
+            <canvas id="icon1" width="128" height="128"></canvas>
+            <div class="temp-section">
+                <p class="temp">-</p>
+
+            </div>
+
+            <p class="discription">-</p>
+
+            <div class="location-section">
+                
+                <p class="timezone">-</p>
+            </div>
+        </div>
+        <div class="more-info">
+            <div>
+                <p class="title">Real Feel°</p>
+                <p class="info real-temp">-</p>
+                <span><sup>°</sup>F</span>
+
+            </div>
+            <div>
+                <p class="title">uvIndex</p>
+                <p class="info uvindex">-</p>
+            </div>
+            <div>
+                <p class="title">Wind speed</p>
+                <p class="info wind-speed">-</p>
+            </div>
+            <div>
+                <p class="title">humidity</p>
+                <p class="info humidity">-</p>
+            </div>
+        </div>
+    </div>
+    <div id="location-false">
+        <img
+            src="data:image/png;base64,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" />
+        <p>Please Allow location</p>
+    </div>
+
+
+</body>
+
+</html>
