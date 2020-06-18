@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#3498db, #303e6b);
+    color: white;
+    font-family: 'rimouskisemibold', sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+canvas {
+    margin: -1em;
+}
+
+#location-true {
+    margin-top: 20%;
+    display: none;
+}
+
+#location-false {
+    height: 30vh;
+}
+
+#location-false img,
+#location-false p {
+    filter: drop-shadow(10px 3px 6px rgba(0, 0, 0, 0.16), 10px 3px 6px rgba(0, 0, 0, 0.23));
+}
+
+.temp-section p,
+.temp-section span {
+    font-size: 4.4em;
+}
+
+.timezone{
+    display: inline-block;
+}
+
+.location-section img{
+    color: #ffff;
+}
